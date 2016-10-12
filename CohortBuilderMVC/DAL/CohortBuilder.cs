@@ -41,7 +41,7 @@ namespace ControllerAndRazorReview.DAL
         public Cohort Cohort3 { get; set; }
         public Cohort Cohort4 { get; set; }
 
-        public List<Cohort> GenerateCohorts()
+        public CohortBuilder()
         {
             Student1 = new Student
             {
@@ -267,7 +267,21 @@ namespace ControllerAndRazorReview.DAL
                 Students = new List<Student> { Student16, Student17, Student18, Student19, Student20 }
             };
 
+        }
+
+        public List<Cohort> GetAllCohorts()
+        {
             return new List<Cohort> { Cohort1, Cohort2, Cohort3, Cohort4 };
+        }
+
+        public List<Student> GetAllStudents()
+        {
+            return new List<Student> { Student1, Student2, Student3, Student4, Student5, Student6, Student7, Student8, Student9, Student10, Student11, Student12, Student13, Student14, Student15, Student16, Student17, Student18, Student19, Student20 };
+        }
+
+        public List<Instructor> GetAllInstructors()
+        {
+            return new List<Instructor> { Instructor1, Instructor2, Instructor3, Instructor4, Instructor5, Instructor6 };
         }
     }
 }
