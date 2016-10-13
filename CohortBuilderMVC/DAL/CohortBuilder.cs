@@ -269,17 +269,17 @@ namespace ControllerAndRazorReview.DAL
 
         }
 
-        public List<Cohort> GetAllCohorts()
+        public virtual List<Cohort> GetAllCohorts()
         {
             return new List<Cohort> { Cohort1, Cohort2, Cohort3, Cohort4 };
         }
 
-        public List<Student> GetAllStudents()
+        public virtual List<Student> GetAllStudents()
         {
             return new List<Student> { Student1, Student2, Student3, Student4, Student5, Student6, Student7, Student8, Student9, Student10, Student11, Student12, Student13, Student14, Student15, Student16, Student17, Student18, Student19, Student20 };
         }
 
-        public List<Instructor> GetAllInstructors()
+        public virtual List<Instructor> GetAllInstructors()
         {
             return new List<Instructor> { Instructor1, Instructor2, Instructor3, Instructor4, Instructor5, Instructor6 };
         }
